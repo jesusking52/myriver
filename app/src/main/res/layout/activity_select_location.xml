@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textColor="@color/river_auction_greyish"
+        android:text="@string/select_location_description"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <!-- 시도 -->
+        <Spinner
+            style="@style/Widget.ActionBar.Spinner"
+            android:id="@+id/select_location_sido_spinner"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"/>
+
+        <!-- 시군구 -->
+        <Spinner
+            style="@style/Widget.ActionBar.Spinner"
+            android:id="@+id/select_location_sigungu_spinner"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"/>
+    </LinearLayout>
+
+</LinearLayout>

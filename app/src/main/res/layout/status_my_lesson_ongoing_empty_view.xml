@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_view"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/my_lesson_ongoing_empty_view"/>
+
+    <TextView
+        style="@style/LeafyGreenButton"
+        android:id="@+id/my_lesson_active_empty_button"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:text="@string/my_lesson_ongoing_empty_student_button"/>
+
+</LinearLayout>

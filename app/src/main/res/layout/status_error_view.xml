@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/error_view"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+             android:gravity="center">
+
+    <include layout="@layout/common_error_retry_button"/>
+
+    <TextView style="@style/ErrorTextViewStyle"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/common_error_network_disconnected"
+              android:layout_marginTop="10dp"/>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ImageView
+        android:id="@+id/loading_animation_outer_view"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:src="@drawable/loading_outer" />
+
+    <ImageView
+        android:id="@+id/loading_animation_inner_view"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:src="@drawable/loading_inner" />
+
+    <ImageView
+        android:id="@+id/loading_animation_rotating_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/rotation" />
+
+    <ImageView
+        android:id="@+id/loading_animation_error_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/cancel"
+        android:visibility="gone" />
+</merge>

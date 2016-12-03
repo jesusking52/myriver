@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp">
+
+        <TextView
+            android:id="@+id/select_university_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/river_auction_greyish"
+            android:text="@string/select_university_description"/>
+
+        <com.riverauction.riverauction.feature.common.widget.TagGroupView
+            android:id="@+id/select_university_tag_group_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/select_university_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@android:color/white">
+
+        <EditText
+            android:id="@+id/select_university_edit_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:layout_marginRight="7dp"
+            android:singleLine="true"
+            android:background="@android:color/transparent"
+            android:textSize="15sp"
+            android:textColorHint="@color/river_auction_greyish"
+            android:hint="@string/select_university_hint"/>
+
+        <ImageView
+            android:id="@+id/select_university_search_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="7dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/button_search"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/select_university_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="24dp"/>
+
+</LinearLayout>

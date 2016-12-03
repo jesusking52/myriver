@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="18dp"
+    android:paddingTop="16dp"
+    android:paddingRight="18dp"
+    android:paddingBottom="22dp"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/image_profile"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_notification_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:textColor="@android:color/black"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/item_notification_created_at"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/river_auction_brownish_grey"
+            android:textSize="13sp"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/icon_time_small"/>
+    </LinearLayout>
+</LinearLayout>

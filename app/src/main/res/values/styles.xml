@@ -1,0 +1,206 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/river_auction_dodger_blue</item>
+        <item name="colorPrimaryDark">@color/river_auction_dark_sky_blue</item>
+        <item name="colorAccent">@color/river_auction_pink</item>
+
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="android:actionBarStyle">@style/Widget.ActionBar</item>
+        <item name="actionBarStyle">@style/Widget.ActionBar</item>
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+        <item name="android:actionBarSize">@dimen/actionbar_size</item>
+        <item name="actionBarSize">@dimen/actionbar_size</item>
+
+        <item name="android:windowBackground">@color/river_auction_pale_grey</item>
+
+        <item name="android:homeAsUpIndicator">@drawable/ic_arrow_back_white</item>
+        <item name="homeAsUpIndicator">@drawable/ic_arrow_back_white</item>
+        <item name="android:dropDownHintAppearance">@style/DropDownHintTextAppearance</item>
+
+        <!-- KeyboardLinearLayout 사용시에 롤리팝에서 제대로 작동하기 위해 써야한다. -->
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="lollipop">false</item>
+    </style>
+
+    <style name="RiverAuctionTheme" parent="AppTheme.Base"/>
+
+    <style name="RiverAuctionTheme.Intro">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:windowBackground">@drawable/bg_intro</item>-->
+    </style>
+
+    <style name="RiverAuctionTheme.Splash">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+
+    <style name="RiverAuctionTheme.White">
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="RiverAuctionTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="RiverAuctionTheme.NoActionBar.Transparent">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- for Toolbar -->
+    <style name="ActionBar.TitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <!-- for FadingActionbar -->
+    <style name="RiverAuctionTheme.TranslucentActionBar">
+        <item name="android:actionBarStyle">@style/Widget.ActionBar.Transparent</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="actionBarStyle">@style/Widget.ActionBar.Transparent</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!--<item name="android:homeAsUpIndicator">@drawable/ic_arrow_back_white</item>-->
+        <!--<item name="homeAsUpIndicator">@drawable/ic_arrow_back_white</item>-->
+    </style>
+
+    <style name="Widget.ActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="titleTextStyle">@style/ActionBar.TitleText</item>
+        <item name="android:titleTextStyle">@style/ActionBar.TitleText</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="Widget.ActionBar.Spinner" parent="Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
+        <item name="android:background">?android:selectableItemBackground</item>
+        <item name="android:dropDownSelector">?android:selectableItemBackground</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:overlapAnchor" tools:targetApi="lollipop">true</item>
+    </style>
+
+    <style name="Widget.ActionBar.Transparent">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="background">@android:color/transparent</item>
+        <item name="titleTextStyle">@style/ActionBar.TitleWhiteText</item>
+        <item name="android:titleTextStyle">@style/ActionBar.TitleWhiteText</item>
+    </style>
+
+    <style name="ActionBar.TitleWhiteText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="DropDownHintTextAppearance">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!-- for status view-->
+    <style name="ErrorTextViewStyle">
+        <item name="android:textColor">@color/black_60</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="EmptyTextViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:layout_marginRight">50dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black_40</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingExtra">6dp</item>
+    </style>
+
+    <!-- for loading animation -->
+    <style name="Transparent" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:textColor">@color/river_auction_greyish_brown</item>
+        <item name="android:textColorHint">@color/river_auction_greyish</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">17dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingRight">17dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/shape_color_white_border_white_five</item>
+    </style>
+
+    <style name="LightishBlueButton">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:background">@color/river_auction_dodger_blue</item>
+    </style>
+
+    <style name="LeafyGreenButton">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:background">@color/river_auction_leafy_green</item>
+    </style>
+
+    <style name="OrangeRedButton">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:background">@color/river_auction_orange_red</item>
+    </style>
+
+    <style name="SignUpLabelTextView">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/river_auction_warm_grey</item>
+        <item name="android:layout_marginBottom">6dp</item>
+    </style>
+
+    <style name="PriceSmallText">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="NotificationBlackText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="NotificationGreyishTwoText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/river_auction_greyish_two</item>
+    </style>
+
+</resources>

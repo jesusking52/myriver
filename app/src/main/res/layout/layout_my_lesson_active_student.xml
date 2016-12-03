@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.riverauction.riverauction.widget.StatusView
+        android:id="@+id/my_lesson_active_student_status_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/status_loading_view"/>
+        <include layout="@layout/status_error_view"/>
+        <include layout="@layout/status_my_lesson_ongoing_empty_view"/>
+        <include layout="@layout/recycler_view"/>
+    </com.riverauction.riverauction.widget.StatusView>
+</merge>

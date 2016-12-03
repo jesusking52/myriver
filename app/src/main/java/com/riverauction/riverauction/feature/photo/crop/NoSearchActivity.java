@@ -1,0 +1,10 @@
+package com.riverauction.riverauction.feature.photo.crop;
+
+import android.app.Activity;
+
+public class NoSearchActivity extends Activity {
+    @Override
+    public boolean onSearchRequested() {
+        return false;
+    }
+}

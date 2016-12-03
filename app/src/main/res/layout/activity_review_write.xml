@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@android:color/white">
+
+        <FrameLayout
+            android:id="@+id/profile_change_photo_container"
+            android:layout_width="76dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="18dp">
+
+            <com.riverauction.riverauction.feature.photo.ProfileImageView
+                android:id="@+id/profile_photo_view"
+                android:layout_width="68dp"
+                android:layout_height="68dp"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/profile_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textSize="15sp"
+            android:textColor="@color/river_auction_brownish_grey"/>
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/icon_degree"
+            android:layout_marginRight="3dp"/>
+        <TextView
+            android:id="@+id/profile_university"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textSize="15sp"
+            android:textColor="@color/river_auction_brownish_grey"/>
+    </LinearLayout>
+
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:background="@color/river_auction_white_six"/>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- basic -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <!-- 평점 -->
+            <TextView
+                style="@style/SignUpLabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="@string/review_rank_text"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:orientation="horizontal">
+                <!-- 평점 -->
+                <Spinner
+                    style="@style/Widget.ActionBar.Spinner"
+                    android:id="@+id/review_rank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- 리뷰 -->
+            <TextView
+                style="@style/SignUpLabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/review_title"/>
+            <RelativeLayout
+                android:id="@+id/sign_up_address_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/shape_color_white_border_white_five">
+
+                <EditView
+                    android:id="@+id/review"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:singleLine="false"
+                    android:layout_centerVertical="true"
+                    android:textSize="15sp"
+                    android:text="@string/review_hint"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

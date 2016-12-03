@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_more"
+        android:title="@string/common_button_more"
+        android:icon="@drawable/icon_etc"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/menu_log_out"
+                android:title="@string/sign_out_button"/>
+
+            <item
+                android:id="@+id/menu_terms"
+                android:title="@string/profile_terms"/>
+        </menu>
+    </item>
+</menu>

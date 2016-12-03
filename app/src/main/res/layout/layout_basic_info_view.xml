@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 기본 정보 -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:background="@color/river_auction_pale_grey"
+        android:paddingLeft="18dp"
+        android:textSize="11sp"
+        android:textColor="@color/river_auction_warm_grey"
+        android:text="@string/basic_info_label"/>
+
+    <!-- 프로필 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="20dp">
+
+        <!-- 사진 & 이름 & 성별-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="14dp"
+            android:gravity="center_horizontal">
+
+            <com.riverauction.riverauction.feature.photo.ProfileImageView
+                android:id="@+id/basic_info_profile_image"
+                android:layout_width="68dp"
+                android:layout_height="68dp" />
+
+            <TextView
+                android:id="@+id/basic_info_name_and_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:textColor="@color/river_auction_greyish"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 학교 과 학년 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="3dp">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/icon_degree"
+                    android:layout_marginRight="3dp"/>
+
+                <TextView
+                    android:id="@+id/basic_info_university_and_major"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/river_auction_greyish_brown"
+                    android:textSize="15sp"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/basic_info_university_status_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="11sp"
+                android:textColor="@color/river_auction_brownish_grey" />
+
+            <!-- 장소-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/icon_location"
+                    android:layout_marginRight="3dp"/>
+
+                <TextView
+                    android:id="@+id/basic_info_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textSize="15sp"
+                    android:textColor="@color/river_auction_greyish_brown"/>
+            </LinearLayout>
+
+            <!-- 번호 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/icon_phone"
+                    android:layout_marginRight="3dp"/>
+
+                <TextView
+                    android:id="@+id/basic_info_phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/river_auction_greyish"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <!-- 희망 과목-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="17dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/icon_subject"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/river_auction_brownish_grey"
+                android:text="@string/common_preferred_subjects"/>
+        </LinearLayout>
+
+        <!-- 교과목 -->
+        <LinearLayout
+            android:id="@+id/basic_info_subject_curriculum_subject_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/icon_book"
+                android:layout_marginRight="2dp"/>
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:textColor="@color/river_auction_brownish_grey_two"
+                android:text="@string/common_subject_group_curriculum_subject"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/basic_info_subject_curriculum_subject_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/river_auction_warm_grey_two"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+
+        <!-- 외국어 -->
+        <LinearLayout
+            android:id="@+id/basic_info_subject_foreign_language_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/icon_language"
+                android:layout_marginRight="2dp"/>
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:textColor="@color/river_auction_brownish_grey_two"
+                android:text="@string/common_subject_group_foreign_language"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/basic_info_subject_foreign_language_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/river_auction_warm_grey_two"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+
+        <!-- 음악 -->
+        <LinearLayout
+            android:id="@+id/basic_info_subject_music_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/icon_music"
+                android:layout_marginRight="2dp"/>
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:textColor="@color/river_auction_brownish_grey_two"
+                android:text="@string/common_subject_group_music"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/basic_info_subject_music_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/river_auction_warm_grey_two"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <!-- 희망 금액 / 내 입찰가  -->
+    <FrameLayout
+        android:id="@+id/basic_info_price_container"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/basic_info_price_title_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:drawableLeft="@drawable/icon_money_500"
+            android:drawablePadding="6dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textSize="15sp"
+            android:textColor="@color/river_auction_greyish_brown"
+            android:text="@string/lesson_detail_preferred_price"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="225dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/basic_info_preferred_price_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/river_auction_dodger_blue"/>
+
+            <TextView
+                android:id="@+id/basic_info_price_seperation_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/river_auction_warm_grey"
+                android:text="/"/>
+
+            <TextView
+                android:id="@+id/basic_info_my_price_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/river_auction_leafy_green"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

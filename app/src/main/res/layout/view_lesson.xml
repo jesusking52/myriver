@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.riverauction.riverauction.widget.StatusView
+        android:id="@+id/status_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/status_loading_view"/>
+        <include layout="@layout/status_error_view"/>
+        <include layout="@layout/status_empty_view"/>
+        <include layout="@layout/swipe_refresh_recycler_view"/>
+
+    </com.riverauction.riverauction.widget.StatusView>
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/filter_button"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@drawable/floating_button"
+        app:fab_colorNormal="@color/river_auction_leafy_green"
+        app:fab_colorPressed="@color/river_auction_leafy_green"
+        app:fab_colorRipple="@android:color/white"/>
+
+    <!-- filter -->
+    <LinearLayout
+        android:id="@+id/filter_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/filter_reset_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/filter_reset_button"/>
+
+                    <Button
+                        android:id="@+id/filter_apply_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/filter_apply_button"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/filter_preferred_gender_radio_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:checkedButton="@+id/filter_preferred_gender_male">
+
+                    <RadioButton
+                        android:id="@+id/filter_preferred_gender_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:layout_marginRight="20dp"
+                        android:drawablePadding="6dp"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:checked="false"
+                        android:text="@string/sign_up_gender_man"/>
+
+                    <RadioButton
+                        android:id="@+id/filter_preferred_gender_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:layout_marginRight="20dp"
+                        android:drawablePadding="6dp"
+                        android:textSize="14sp"
+                        android:checked="false"
+                        android:textColor="@android:color/black"
+                        android:text="@string/sign_up_gender_woman"/>
+
+                    <RadioButton
+                        android:id="@+id/filter_preferred_gender_none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawablePadding="6dp"
+                        android:textSize="14sp"
+                        android:checked="false"
+                        android:textColor="@android:color/black"
+                        android:text="@string/common_anything"/>
+                </RadioGroup>
+
+                <CheckBox
+                    android:id="@+id/filter_subject_korea_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up_subject_korea"/>
+                <CheckBox
+                    android:id="@+id/filter_subject_english_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up_subject_english"/>
+                <CheckBox
+                    android:id="@+id/filter_subject_math_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up_subject_math"/>
+                <CheckBox
+                    android:id="@+id/filter_subject_science_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up_subject_science"/>
+                <CheckBox
+                    android:id="@+id/filter_subject_society_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up_subject_society"/>
+                <CheckBox
+                    android:id="@+id/filter_subject_discussion_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up_subject_discussion"/>
+                <CheckBox
+                    android:id="@+id/filter_subject_english_conversation_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up_subject_english_conversation"/>
+                <CheckBox
+                    android:id="@+id/filter_subject_chinese_conversation_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up_subject_chinese_conversation"/>
+
+                <!-- 희망 금액 -->
+                <EditText
+                    android:id="@+id/filter_preferred_price_minimum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"/>
+
+                <EditText
+                    android:id="@+id/filter_preferred_price_maximum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"/>
+
+                <!-- 학교 (유치원/초/중/고/재수/일반인) -->
+                <Spinner
+                    style="@style/Widget.ActionBar.Spinner"
+                    android:id="@+id/filter_student_status_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <!-- 학년 (위의 학교 선택에 따라 UI 가 달라짐) -->
+                <Spinner
+                    style="@style/Widget.ActionBar.Spinner"
+                    android:id="@+id/filter_grade_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="river_auction_dodger_blue">#448AFF</color>
+    <color name="river_auction_dark_sky_blue">#3F81EF</color>
+    <color name="river_auction_lightish_blue">#5677FC</color>
+    <color name="river_auction_black">#333333</color>
+    <color name="river_auction_white">#E0E0E0</color>
+    <color name="river_auction_white_two">#F5F5F5</color>
+    <color name="river_auction_white_three">#FAFAFA</color>
+    <color name="river_auction_white_five">#EBEBEB</color>
+    <color name="river_auction_white_six">#EEEEEE</color>
+    <color name="river_auction_brownish_grey">#616161</color>
+    <color name="river_auction_brownish_grey_two">#626262</color>
+    <color name="river_auction_warm_grey">#8C8C8C</color>
+    <color name="river_auction_warm_grey_two">#9E9E9E</color>
+    <color name="river_auction_warm_grey_three">#757575</color>
+    <color name="river_auction_greyish">#AFAFAF</color>
+    <color name="river_auction_greyish_two">#AEAEAE</color>
+    <color name="river_auction_greyish_brown">#4E4E4E</color>
+    <color name="river_auction_greyish_brown_two">#404040</color>
+    <color name="river_auction_greyish_brown_three">#424242</color>
+    <color name="river_auction_pinkish_grey">#bdbdbd</color>
+    <color name="river_auction_orange_red">#FF5722</color>
+    <color name="river_auction_leafy_green">#42BD41</color>
+    <color name="river_auction_coral">#F36C60</color>
+    <color name="river_auction_pale_grey">#F1F5F8</color>
+
+    <color name="river_auction_pink">#FF4081</color>
+    <color name="white_35">#59FFFFFF</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="white_55">#8CFFFFFF</color>
+    <color name="white_85">#D8FFFFFF</color>
+
+    <color name="black_05">#0D000000</color>
+    <color name="black_10">#1A000000</color>
+    <color name="black_15">#26000000</color>
+    <color name="black_20">#33000000</color>
+    <color name="black_25">#40000000</color>
+    <color name="black_30">#4C000000</color>
+    <color name="black_35">#59000000</color>
+    <color name="black_40">#66000000</color>
+    <color name="black_45">#73000000</color>
+    <color name="black_50">#80000000</color>
+    <color name="black_55">#8C000000</color>
+    <color name="black_60">#99000000</color>
+    <color name="black_70">#B2000000</color>
+    <color name="black_75">#BF000000</color>
+    <color name="black_80">#CC000000</color>
+    <color name="black_85">#D8000000</color>
+    <color name="black_90">#E6000000</color>
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textColor="@color/river_auction_greyish"
+        android:text="@string/select_price_range_description"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingTop="19dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="19dp"
+        android:orientation="vertical">
+
+        <!-- LOW -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:textSize="15sp"
+            android:textColor="@color/river_auction_dodger_blue"
+            android:text="@string/select_price_range_low"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="238dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp">
+
+                <EditText
+                    android:id="@+id/select_price_range_low_price_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:hint="@string/select_price_hint"
+                    android:textSize="15sp"
+                    android:background="@drawable/bg_select_price_edit"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/river_auction_warm_grey"
+                    android:text="@string/select_price_unit"/>
+            </FrameLayout>
+
+
+            <ImageView
+                android:id="@+id/select_price_range_low_price_button"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@drawable/button_active_inactive_selector"/>
+        </LinearLayout>
+
+        <!-- HIGH -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="6dp"
+            android:textSize="15sp"
+            android:textColor="@color/river_auction_dodger_blue"
+            android:text="@string/select_price_range_high"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="238dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp">
+
+                <EditText
+                    android:id="@+id/select_price_range_high_price_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:hint="@string/select_price_hint"
+                    android:textSize="15sp"
+                    android:background="@drawable/bg_select_price_edit"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/river_auction_warm_grey"
+                    android:text="@string/select_price_unit"/>
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/select_price_range_high_price_button"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@drawable/button_active_inactive_selector"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

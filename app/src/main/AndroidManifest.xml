@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.riverauction.riverauction" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 결제 -->
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <!-- for GCM -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <permission android:name="com.riverauction.riverauction.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.riverauction.riverauction.permission.C2D_MESSAGE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- The following two permissions are not required to use
+     Google Maps Android API v2, but are recommended. -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+
+    <!-- for GCM -->
+    <!--<uses-permission android:name="kr.co.vcnc.betweendate.date.permission.C2D_MESSAGE"/>-->
+    <!--<permission android:name="kr.co.vcnc.betweendate.date.permission.C2D_MESSAGE" android:protectionLevel="signature"/>-->
+
+    <application
+        android:name=".RiverAuctionApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/RiverAuctionTheme" >
+
+        <activity android:name=".feature.LaunchActivity"
+            android:theme="@style/RiverAuctionTheme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".feature.main.MainActivity"
+            android:launchMode="singleTop"
+            android:logo="@drawable/logo_part"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".feature.register.signup.student.SignUpStudentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".feature.register.signup.student.SignUpStudentLessonInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".feature.register.signup.teacher.SignUpTeacherActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".feature.register.signup.teacher.SignUpTeacherLessonInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".feature.register.IntroActivity" android:theme="@style/RiverAuctionTheme.NoActionBar" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name=".feature.teacher.filter.TeacherFilterActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".feature.lesson.filter.StudentFilterActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".feature.bidding.MakeBiddingActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".feature.lesson.LessonDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".feature.teacher.TeacherDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".feature.mylesson.detail.MyLessonDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".feature.mylesson.detail.MyLessonDetailSelectListActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".feature.notification.NotificationActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".feature.lesson.bidding.PostBiddingActivity" android:theme="@style/RiverAuctionTheme.White" android:screenOrientation="portrait"/>
+
+        <activity android:name=".feature.profile.ProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".feature.profile.patch.ProfilePatchActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".feature.postcode.DaumPostCodeActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".feature.common.subject.SelectSubjectsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".feature.common.price.SelectPriceRangeActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".feature.common.dayofweek.SelectDayOfWeeksActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".feature.common.gender.SelectGenderActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".feature.common.location.SelectLocationActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".feature.common.studentstatus.SelectStudentStatusActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".feature.common.university.SelectUniversityActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".feature.profile.patch.student.ProfileStudentBasicInfoPatchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".feature.profile.patch.student.ProfileStudentLessonInfoPatchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".feature.profile.patch.teacher.ProfileTeacherBasicInfoPatchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".feature.profile.patch.teacher.ProfileTeacherLessonInfoPatchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name=".feature.register.signup.phone.EnterPhoneNumberActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".feature.register.signup.phone.EnterPhoneNumberCodeActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".feature.photo.crop.CropImageActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".feature.profile.shop.ShopActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".feature.tutorial.TutorialActivity" android:theme="@style/RiverAuctionTheme.NoActionBar" android:screenOrientation="portrait"/>
+
+
+        <activity android:name=".feature.review.ReviewWriteActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <!-- GCM -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.example.gcm" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name=".gcm.RiverAuctionGCMListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <!-- GCM Register -->
+        <service
+            android:name="com.riverauction.riverauction.gcm.GCMTokenRegistrationService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.riverauction.riverauction.gcm.GCMInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

@@ -1,0 +1,2 @@
+-keep class * implements com.riverauction.riverauction.api.converter.JacksonApiConverter { *; }
+-keepnames class * implements com.riverauction.riverauction.api.converter.JacksonApiConverter { *; }

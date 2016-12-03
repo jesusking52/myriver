@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!-- 경매 상태 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@android:color/white">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:paddingLeft="35dp">
+
+            <!-- 경매중 -->
+            <LinearLayout
+                android:id="@+id/lesson_detail_lesson_status_bidding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="6dp"
+                    android:src="@drawable/icon_progress_green"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:textColor="@color/river_auction_leafy_green"
+                    android:text="@string/common_lesson_status_bidding"/>
+            </LinearLayout>
+
+            <!-- 매칭중 -->
+            <LinearLayout
+                android:id="@+id/lesson_detail_lesson_status_dealing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="6dp"
+                    android:src="@drawable/icon_stop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:textColor="@color/river_auction_greyish_two"
+                    android:text="@string/common_lesson_status_dealing"/>
+            </LinearLayout>
+
+            <!-- 매칭 실패 -->
+            <LinearLayout
+                android:id="@+id/lesson_detail_lesson_status_canceled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:textColor="@color/river_auction_greyish_brown_three"
+                    android:text="@string/common_lesson_status_cancel"/>
+            </LinearLayout>
+
+           <!-- 매칭 완료 -->
+            <LinearLayout
+                android:id="@+id/lesson_detail_lesson_status_finished"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:textColor="@color/river_auction_greyish_brown_three"
+                    android:text="@string/common_lesson_status_finished"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/lesson_detail_remain_time_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingTop="3dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="3dp"
+                android:layout_marginLeft="11dp"
+                android:background="@drawable/bg_lesson_remain_time"
+                android:textSize="34sp"
+                android:textColor="@color/river_auction_greyish_brown_two"
+                android:text="00:00" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/lesson_detail_remain_time_view"
+                android:layout_alignBaseline="@id/lesson_detail_remain_time_view"
+                android:layout_marginLeft="6dp"
+                android:layout_marginBottom="3dp"
+                android:textSize="15sp"
+                android:textColor="@color/river_auction_warm_grey"
+                android:text="@string/common_remain"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/river_auction_white_six"/>
+
+    <LinearLayout
+        android:id="@+id/go_to_lesson_detail_button"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/river_auction_dodger_blue"
+            android:text="@string/my_lesson_go_to_lesson_detail_button"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon_arrow_right"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/river_auction_white_six"/>
+
+    <TextView
+        android:id="@+id/active_lesson_biddings_count_view"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textSize="11sp"
+        android:textColor="@color/river_auction_greyish_two"
+        android:background="@color/river_auction_pale_grey"/>
+</LinearLayout>

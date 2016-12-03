@@ -1,0 +1,425 @@
+<resources>
+    <string name="app_name">매칭튜터</string>
+
+    <string name="common_button_retry">재시도</string>
+    <string name="common_button_done">완료</string>
+    <string name="common_button_next">다음</string>
+    <string name="common_button_sign_up">매칭 튜터 시작하기</string>
+    <string name="common_button_confirm">확인</string>
+    <string name="common_button_more">더 보기</string>
+    <string name="common_button_go_to_shop">코인 충전하러가기</string>
+    <string name="common_button_close">닫기</string>
+    <string name="common_button_ok">예</string>
+    <string name="common_button_no">아니오</string>
+    <string name="common_button_cancel">취소</string>
+    <string name="common_button_crop">사용</string>
+    <string name="common_sign_out">로그아웃</string>
+    <string name="common_age_choose">생년</string>
+    <string name="common_gender_choose">성별</string>
+    <string name="common_university_choose">학교 검색</string>
+    <string name="common_university_status_choose">선택</string>
+    <string name="common_major_choose">학과</string>
+    <string name="common_choose">선택하세요</string>
+    <string name="common_level_choose">상/중/하</string>
+    <string name="common_career_choose">총 년</string>
+    <string name="common_class_time_choose">하루 수업 시간</string>
+    <string name="common_class_type_choose">개인/그룹</string>
+    <string name="common_class_available_count_choose">주 회</string>
+    <string name="common_available_days_of_week_choose">희망 요일 선택</string>
+    <string name="common_sign_dialog_message">정말 로그아웃 하시겠습니까?</string>
+    <string name="common_error_title">오류</string>
+    <string name="common_error_message_network">네트워크 연결이 좋지 않습니다. 연결 상태를 확인해주세요</string>
+    <string name="common_error_message_unknown">알 수 없는 오류가 발생했습니다. 리버옥션으로 문의주세요</string>
+    <string name="common_mon">월</string>
+    <string name="common_mon_long">월요일</string>
+    <string name="common_tue">화</string>
+    <string name="common_tue_long">화요일</string>
+    <string name="common_wed">수</string>
+    <string name="common_wed_long">수요일</string>
+    <string name="common_thu">목</string>
+    <string name="common_thu_long">목요일</string>
+    <string name="common_fri">금</string>
+    <string name="common_fri_long">금요일</string>
+    <string name="common_sat">토</string>
+    <string name="common_sat_long">토요일</string>
+    <string name="common_sun">일</string>
+    <string name="common_sun_long">일요일</string>
+    <string name="common_anything">무관</string>
+    <string name="common_year">년</string>
+    <string name="common_price_unit">원</string>
+    <string name="common_price_big_unit">%1$d만원</string>
+    <string name="common_count_unit">회</string>
+    <string name="common_shop_item_count_unit">%d개</string>
+    <string name="common_shop_item_price_unit">%s원</string>
+    <string name="common_class_available_count_unit">주 %1$d 회</string>
+    <string name="common_count_time">시간</string>
+    <string name="common_count_time_unit" formatted="false">하루 %.1f 시간</string>
+    <string name="common_grade_unit">%1$d학년</string>
+    <string name="common_error_network_disconnected">인터넷 연결 상태가 좋지 않습니다</string>
+    <string name="common_gender_male_short">(남)</string>
+    <string name="common_gender_female_short">(여)</string>
+    <string name="common_in_school">재학</string>
+    <string name="common_preferred_gender_choose">희망 성별</string>
+    <string name="common_leave_of_absence">휴학</string>
+    <string name="common_graduation">졸업</string>
+    <string name="common_phone_number">010-XXXX-XXXX</string>
+    <string name="common_preferred_subjects">희망과목</string>
+    <string name="common_subject_group_curriculum_subject">교과목</string>
+    <string name="common_subject_group_foreign_language">외국어</string>
+    <string name="common_subject_group_music">음악</string>
+    <string name="common_career">과외 경력</string>
+    <string name="common_available_days_of_week">수업 가능 요일</string>
+    <string name="common_class_available_count">수업 가능 횟수</string>
+    <string name="common_class_time">희망 수업 시간</string>
+    <string name="common_remain">남음</string>
+    <string name="common_person_count_unit">%1$d명</string>
+    <string name="common_remain_unit">%1$s 남음</string>
+    <string name="common_student_department_type">계열</string>
+    <string name="common_select_all">전체선택</string>
+
+    <string name="menu_filter_initialization">초기화</string>
+
+    <string name="enter_phone_number_action_bar_title">인증 번호 입력</string>
+    <string name="enter_phone_number_description">본인 인증을 위해\n 휴대폰 번호를 입력 하세요</string>
+    <string name="enter_phone_number_error_message">본인 인증을 위해 휴대폰 번호를 입력 하세요</string>
+    <string name="enter_phone_number_hint">휴대폰 번호 입력</string>
+    <string name="enter_phone_number_next_button">인증 번호 받기</string>
+    <string name="enter_phone_number_code_error_message">인증 번호를 입력하세요</string>
+
+    <string name="enter_phone_number_code_action_bar_title">인증 하기</string>
+    <string name="enter_phone_number_code_description">%s로 인증번호를 보냈습니다</string>
+    <string name="enter_phone_number_code_hint">인증번호를 입력하세요</string>
+    <string name="enter_phone_number_code_next_button">인증 하기</string>
+
+    <string name="lesson_detail_preferred_price">희망 금액</string>
+    <string name="lesson_detail_preferred_price_with_my_price">희망 금액/내 입찰가</string>
+    <string name="lesson_detail_bidding_count">참여 인원</string>
+
+    <string name="intro_next_button">건너뛰기</string>
+    <string name="intro_sign_in">로그인</string>
+    <string name="intro_sign_up_teacher">선생님 가입하기</string>
+    <string name="intro_sign_up_student">학부모&amp;학생 가입하기</string>
+
+    <string name="insufficient_coins_dialog_title">열쇠 부족</string>
+    <string name="insufficient_coins_dialog_message">열쇠가 부족합니다. 구매후에 재시도해주세요</string>
+
+    <string name="intro_sign_in_error_dialog_title">로그인 오류</string>
+    <string name="intro_sign_in_error_dialog_message">아이디 혹은 패스워드가 잘못되었습니다</string>
+
+    <string name="sign_up_teacher_info_label">선생님 정보</string>
+    <string name="sign_up_teacher_email_password_label">아이디/비밀번호</string>
+    <string name="sign_up_teacher_university_label">학교/학과/상태</string>
+    <string name="sign_up_teacher_location_label">주소</string>
+    <string name="sign_up_lesson_info_career_label">과외 경력</string>
+    <string name="sign_up_lesson_info_preferred_subjects_label">과외 희망 과목</string>
+    <string name="sign_up_lesson_info_condition_label">과외 희망 요일/수업 시간/희망 성별</string>
+    <string name="sign_up_lesson_info_preferred_price_label">희망 금액</string>
+    <string name="sign_up_lesson_info_description_label">경력/수업 방식 소개</string>
+    <string name="sign_up_lesson_info_student_description_label">과외 희망 사항</string>
+    <string name="sign_up_student_status_label">학년/계열</string>
+    <string name="sign_up_student_level_label">학업 수준</string>
+    <string name="sign_up_student_info_label">학생 정보</string>
+
+    <string name="sign_up_basic_info_action_bar_title">기본 정보 변경</string>
+    <string name="sign_up_lesson_info_action_bar_title">과외 정보 변경</string>
+    <string name="sign_up_student_status_hint">초/중/고</string>
+    <string name="sign_up_grade_hint">학년</string>
+    <string name="sign_up_department_hint">계열</string>
+    <string name="sign_up_email_hint">아이디(이메일)</string>
+    <string name="sign_up_password_hint">비밀번호</string>
+    <string name="sign_up_password_check_hint">비밀번호 재입력</string>
+    <string name="sign_up_name_hint">이름</string>
+    <string name="sign_up_phone_number_hint">폰번호를 입력하세요(ex: 01012345678)</string>
+    <string name="sign_up_phone_address_hint">주소를 검색하세요</string>
+    <string name="sign_up_phone_preferred_price_hint">희망 금액을 입력</string>
+    <string name="sign_up_teacher_description_hint">경력, 수업방식을 소개해주세요</string>
+    <string name="sign_up_student_description_hint">희망 사항을 입력해주세요</string>
+    <string name="sign_up_gender_man">남성</string>
+    <string name="sign_up_gender_woman">여성</string>
+    <string name="sign_up_age_year">년</string>
+    <string name="sign_up_available_subjects_hint">희망 과목 선택</string>
+    <string name="sign_up_subject_korea">국어</string>
+    <string name="sign_up_subject_english">영어</string>
+    <string name="sign_up_subject_math">수학</string>
+    <string name="sign_up_subject_science">과학</string>
+    <string name="sign_up_subject_society">사회</string>
+    <string name="sign_up_subject_discussion">논술</string>
+    <string name="sign_up_subject_english_conversation">영어회화</string>
+    <string name="sign_up_subject_chinese_conversation">중국어</string>
+    <string name="sign_up_career_0">1년 미만</string>
+    <string name="sign_up_career_1">1년</string>
+    <string name="sign_up_career_2">2년</string>
+    <string name="sign_up_career_3">3년</string>
+    <string name="sign_up_career_4">4년</string>
+    <string name="sign_up_career_5">5년</string>
+    <string name="sign_up_career_6">5년 이상</string>
+    <string name="sign_up_level_high">상</string>
+    <string name="sign_up_level_middle">중</string>
+    <string name="sign_up_level_low">하</string>
+    <string name="sign_up_class_type_group">그룹</string>
+    <string name="sign_up_class_type_individual">개인</string>
+    <string name="sign_up_student_status_kindergarten">유치원</string>
+    <string name="sign_up_student_status_elementary_school">초등학교</string>
+    <string name="sign_up_student_status_middle_school">중학교</string>
+    <string name="sign_up_student_status_high_school">고등학교</string>
+    <string name="sign_up_student_status_university">대학생</string>
+    <string name="sign_up_student_status_retry_university">재수</string>
+    <string name="sign_up_student_status_ordinary">일반인</string>
+    <string name="sign_up_department_type_liberal_arts">문과</string>
+    <string name="sign_up_department_type_natural_sciences">이과</string>
+    <string name="sign_up_department_type_art_music_physical">예체능</string>
+    <string name="sign_up_department_type_commercial_and_technical">실업계</string>
+    <string name="sign_up_department_type_none">미정</string>
+
+    <string name="sign_up_error_dialog_title">가입 오류</string>
+    <string name="sign_up_error_dialog_check_email_message">이메일을 작성해주세요</string>
+    <string name="sign_up_error_dialog_check_password_message">비밀번호를 작성해주세요</string>
+    <string name="sign_up_error_dialog_check_password_check_message">비밀번호가 일치하지 않습니다</string>
+    <string name="sign_up_error_dialog_check_name_message">이름을 작성해주세요</string>
+    <string name="sign_up_error_dialog_check_phone_number_message">핸드폰 번호를 작성해주세요</string>
+    <string name="sign_up_error_dialog_check_phone_number_only_integer_message">핸드폰 번호에 숫자만 입력해주세요</string>
+    <string name="sign_up_error_dialog_check_gender_message">성별을 선택해주세요</string>
+    <string name="sign_up_error_dialog_check_age_message">출생년도를 선택해주세요</string>
+    <string name="sign_up_error_dialog_check_address_message">주소를 작성해주세요</string>
+    <string name="sign_up_error_dialog_check_university_message">출신대학을 선택해주세요</string>
+    <string name="sign_up_error_dialog_check_major_message">전공을 선택해주세요</string>
+    <string name="sign_up_error_dialog_check_university_status_message">학년을 선택해주세요</string>
+    <string name="sign_up_error_dialog_check_student_status_message">학교를 선택해주세요</string>
+    <string name="sign_up_error_dialog_check_grade_message">학년을 선택해주세요</string>
+    <string name="sign_up_error_dialog_check_department_type_message">계열을 선택해주세요</string>
+
+    <string name="sign_up_error_dialog_check_subject_message">과목을 선택해주세요</string>
+    <string name="sign_up_error_dialog_check_career_message">과외경력을 선택해주세요</string>
+    <string name="sign_up_error_dialog_check_day_of_week_message">수업 가능 요일을 선택해주세요</string>
+    <string name="sign_up_error_dialog_check_class_available_count_message">수업 가능 횟수를 선택해주세요</string>
+    <string name="sign_up_error_dialog_check_class_time_message">하루 수업 시간을 선택해주세요</string>
+    <string name="sign_up_error_dialog_check_preferred_gender_message">희망 성별을 선택해주세요</string>
+    <string name="sign_up_error_dialog_check_preferred_price_message">희망 과외 금액을 작성해주세요</string>
+    <string name="sign_up_error_dialog_check_description_message">수업방식/경력소개를 작성해주세요</string>
+    <string name="sign_up_error_dialog_check_student_description_message">과외 희망 사항을 작성해주세요</string>
+    <string name="sign_up_error_dialog_check_class_type_message">과외형태를 선택해주세요</string>
+
+    <string name="sign_up_error_invalid_argument_toast">입력하신 값들을 다시 확인해주세요</string>
+
+    <string name="sign_out_button">로그아웃</string>
+    <string name="sign_out_dialog_title">로그아웃</string>
+    <string name="sign_out_dialog_message">정말 로그아웃 하시겠습니까?</string>
+
+    <string name="main_tab_teacher">선생님목록</string>
+    <string name="main_tab_lesson">과외 경매</string>
+    <string name="main_tab_my_lesson">내 경매</string>
+    <string name="main_tab_message">메세지함</string>
+    <string name="main_tab_profile">내 정보</string>
+
+    <string name="teacher_empty_view">등록된 선생님이 없습니다</string>
+    <string name="lesson_empty_view">등록된 과외 경매가 없습니다</string>
+
+    <string name="my_lesson_detail_select_empty_view">입찰에 참여한 선생님이 없습니다</string>
+
+    <string name="my_lesson_tab_ongoing">진행중</string>
+    <string name="my_lesson_tab_history">과거 경매</string>
+
+    <string name="my_lesson_go_to_lesson_detail_button">내 경매 정보 보기</string>
+    <string name="my_lesson_cancel_lesson_button">경매를 취소하시겠습니까?</string>
+
+    <string name="my_lesson_ongoing_empty_view">진행 중인 경매가 없습니다\n새롭게 경매를 시작해보세요</string>
+    <string name="my_lesson_ongoing_empty_student_button">경매시작</string>
+    <string name="my_lesson_ongoing_empty_teacher_button">과외 경매 보러가기</string>
+    <string name="my_lesson_history_empty_view">경매 히스토리가 없습니다</string>
+    <string name="my_lesson_active_bidding_count">총 %d명의 선생님이 입찰에 참여중입니다</string>
+    <string name="my_lesson_bidding_status_toast">경매 마감 후 선생님 상세 프로필을 확인할 수 있습니다</string>
+
+    <string name="make_bidding_actionbar_title">경매 시작</string>
+    <string name="make_bidding_description">입찰 시작 전에 내 정보를 확인하세요</string>
+    <string name="change_bidding_condition_button">과외 정보 수정</string>
+    <string name="make_bidding_button">경매 하기</string>
+
+    <string name="filter_apply_button">검색</string>
+    <string name="filter_reset_button">초기화</string>
+    <string name="filter_action_bar">맞춤 검색</string>
+
+    <string name="menu_make_bidding_button">입찰 시작</string>
+    <string name="menu_favorite">찜하기</string>
+    <string name="menu_favorite_cancel">찜해제</string>
+    <string name="menu_show_phone_number">연락처 보기</string>
+    <string name="menu_bidding">입찰 하기</string>
+    <string name="menu_bidding_cancel">입찰취소</string>
+    <string name="menu_lesson_cancel">경매취소</string>
+    <string name="menu_notification">메세지 함</string>
+    <string name="menu_profile">내 정보</string>
+
+    <string name="lesson_price_hint">입찰가격을 입력해주세요</string>
+
+    <string name="favorite_post_success_toast">찜이 되었습니다</string>
+    <string name="favorite_delete_success_toast">찜이 해제되었습니다</string>
+    <string name="favorite_title">찜하기</string>
+    <string name="favorite_post_message">찜하기를 하시겠습니까?</string>
+    <string name="favorite_delete_message">찜을 해제하시겠습니까?</string>
+
+    <string name="lesson_detail_cancel_lesson_toast">경매가 취소되었습니다</string>
+
+    <string name="teacher_phone_number_dialog_title">연락처 보기</string>
+    <string name="teacher_phone_number_dialog_message">아이템이 %1$d만큼 차감됩니다. 연락처를 확인할까요?</string>
+    <string name="teacher_item_preferred_price">희망 금액</string>
+    <string name="teacher_item_bidding_price">입찰 금액</string>
+    <string name="teacher_item_review_empty">현제 작성된 리뷰가 없습니다.</string>
+    <string name="teacher_item_review_empty2">리뷰작성 버튼을 눌러 리뷰를 남겨 주세요.</string>
+    <string name="teacher_item_review_button">리뷰 작성</string>
+
+    <string name="basic_info_label">기본 정보</string>
+    <string name="lesson_info_label">과외 정보</string>
+    <string name="description_info_label">경력 소개 / 수업 방식</string>
+    <string name="description_review_label">선생님 리뷰</string>
+
+    <string name="lesson_detail_expired_bidding_dialog_message">경매가 마감되었습니다</string>
+    <string name="lesson_detail_invalid_dialog_message">입찰 가격을 숫자만 입력해주세요</string>
+    <string name="lesson_detail_bidding_dialog_message">아이템이 %1$d만큼 차감됩니다. 입찰하시겠습니까?</string>
+    <string name="lesson_detail_description_title">선생님에게 바라는 점</string>
+
+    <string name="notification_action_bar_title">내 소식</string>
+    <string name="notification_tab_message">메세지</string>
+    <string name="notification_tab_favorite">찜 리스트</string>
+    <string name="message_empty_view">알림 목록이 없습니다</string>
+    <string name="favorite_student_empty_view">현재 찜 리스트가 없습니다.\n선생님 목록을 확인해보세요.</string>
+    <string name="favorite_teacher_empty_view">현재 찜 리스트가 없습니다.\n경매 목록을 확인해보세요.</string>
+
+    <string name="profile_patch_button">프로필 수정</string>
+    <string name="common_lesson_status_bidding">경매중</string>
+    <string name="common_lesson_status_dealing">매칭중</string>
+    <string name="common_lesson_status_cancel">매칭취소</string>
+    <string name="common_lesson_status_finished">매칭완료</string>
+
+    <string name="post_bidding_action_bar_title">입찰</string>
+    <string name="post_bidding_dialog_title">입찰하기</string>
+    <string name="post_bidding_hint">입찰금액을 입력하세요</string>
+    <string name="post_bidding_dialog_message">입찰하려면 1개의 열쇠가 필요합니다. 입찰하시겠습니까?</string>
+    <string name="post_bidding_preferred_price">학생 희망 금액</string>
+
+    <string name="format_week_ago">%d주 전</string>
+    <string name="format_day_ago">%d일 전</string>
+    <string name="format_hour_ago">%d시간 전</string>
+    <string name="format_minute_ago">%d분 전</string>
+    <string name="format_sec_ago">%d초 전</string>
+
+    <string name="item_lesson_preferred_price">희망 금액 %d만원 이하</string>
+
+    <string name="select_subjects_description">희망하는 과외 과목을 선택하세요</string>
+    <string name="select_subjects_action_bar">과목 선택</string>
+
+    <string name="select_price_range_description">희망하는 과외 금액을 입력하세요</string>
+    <string name="select_price_range_low">최저 희망 금액</string>
+    <string name="select_price_range_high">최대 희망 금액</string>
+    <string name="select_price_range_error_message">최저 희망 금액이 최대 희망 금액보다 클 수 없습니다</string>
+    <string name="select_price_hint">금액을 입력하세요</string>
+    <string name="select_price_unit">만원</string>
+
+    <string name="select_student_action_bar_title">학년 선택</string>
+    <string name="select_student_status_description">희망하는 학생의 학년을 선택하세요</string>
+
+    <string name="location_action_bar_title">주소 선택</string>
+
+    <string name="select_university_action_bar_title">학교 검색</string>
+    <string name="select_university_description">희망하는 선생님의 학교를 찾아보세요</string>
+    <string name="select_university_error">검색어를 입력하세요</string>
+    <string name="select_university_hint">학교명을 입력하세요</string>
+    <string name="select_university_confirm_dialog_message">해당 학교를 선택하시겠습니까?</string>
+
+    <string name="select_location_action_bar_title">지역 선택</string>
+    <string name="select_location_description">희망하는 지역을 선택하세요</string>
+    <string name="select_location_sido_hint">시/도</string>
+    <string name="select_location_sigungu_hint">시/군/구</string>
+
+    <string name="select_day_of_weeks_description">희망하는 과외 요일을 선택하세요</string>
+
+    <string name="select_gender_description">희망하는 성별을 선택하세요</string>
+
+    <string name="filter_price_low">%d만 이상</string>
+    <string name="filter_price_high">%d만 이하</string>
+
+    <string name="teacher_detail_action_bar_title">선생님 프로필</string>
+    <string name="basic_info_teacher_no_phone_number">하단의 연락처 보기 버튼을 클릭하시면 연락처를 확인할 수 있습니다.</string>
+    <string name="basic_info_student_no_phone_number">경매에 낙찰되면 연락처 확인이 가능합니다.</string>
+
+    <string name="lesson_detail_action_bar_title">학생 프로필</string>
+
+    <string name="profile_action_bar_title">마이페이지</string>
+    <string name="profile_teacher_on_off_title">과외 모집 상태</string>
+    <string name="profile_teacher_on_off_description">Off할 경우 목록에 나타나지 않습니다</string>
+    <string name="profile_teacher_on_off_tip">Tip</string>
+    <string name="profile_change_basic_info">기본 정보 수정</string>
+    <string name="profile_change_lesson_info">과외 정보 수정</string>
+    <string name="profile_purchase_item">내 아이템/구매</string>
+    <string name="profile_faq">FAQ</string>
+    <string name="profile_question">문의하기</string>
+    <string name="profile_question_title">[문의하기] 매칭튜터로 문의하기</string>
+    <string name="profile_terms">이용약관/개인 정보 취금 방침</string>
+
+    <string name="shop_purchase_dialog_title">구매하기</string>
+    <string name="shop_purchase_dialog_message">아이템을 구매하시겠습니까?</string>
+    <string name="shop_purchase_dialog_cancel_title">구매취소</string>
+    <string name="shop_purchase_dialog_cancel_message">구매가 취소되었습니다</string>
+
+    <string name="shop_purchase_dialog_error_title">구매오류</string>
+
+    <string name="shop_purchase_dialog_success_title">구매성공</string>
+    <string name="shop_purchase_dialog_success_message">구매를 성공하였습니다:</string>
+
+    <string name="shop_action_bar_title">내 아이템/구매</string>
+    <string name="shop_my_item_count">내 열쇠 : </string>
+    <string name="shop_description">충전하신 열쇠는 안드로이드 기기에서만\n사용하실 수 있습니다. 구매하신 열쇠는 환불이 불가하니\n구입 전 한 번 더 확인 해주세요.</string>
+
+    <string name="filter_description">원하는 조건으로 검색을 해보세요</string>
+    <string name="filter_subjects">과목</string>
+    <string name="filter_price">금액</string>
+    <string name="filter_grade">학년</string>
+    <string name="filter_university">학교</string>
+    <string name="filter_location">장소</string>
+    <string name="filter_gender">성별</string>
+    <string name="filter_no">조건 없음</string>
+    <string name="filter_no_subject">전 과목</string>
+    <string name="filter_no_gender">무관</string>
+
+    <string name="tutorial_skip_button">건너뛰기</string>
+    <string name="tutorial_next_button">다음</string>
+    <string name="tutorial_start_button">시작하기</string>
+    <string name="permission_denied_default">사진 권한이 없습니다</string>
+
+    <string name="photo_request_from_camera">사진 찍기</string>
+    <string name="photo_request_from_android_gallery">앨범 사진 선택</string>
+    <string name="photo_delete">사진 삭제</string>
+
+    <string name="lesson_bidding_list_dialog_title">입찰 선택</string>
+    <string name="lesson_bidding_list_dialog_positive_button">확인</string>
+    <string name="lesson_bidding_list_dialog_negative_button">열쇠가 1만큼 차감됩니다</string>
+    <string name="lesson_bidding_select_teacher_success_toast">해당 입찰을 선택하셨습니다</string>
+    <string name="lesson_bidding_select_fail_toast">선생님을 선택할 수 있는 기간이 아닙니다</string>
+    <!-- Toast/alert that the face detection is being run -->
+    <string name="runningFaceDetection">Please wait\u2026</string>
+    <!-- Toast/alert after saving wallpaper -->
+    <string name="wallpaper">Setting wallpaper, please wait\u2026</string>
+    <!-- Toast/alert that the image is being saved to the SD card -->
+    <string name="savingImage">Saving picture\u2026</string>
+    <!-- Hint that appears when cropping an image with more than one face -->
+    <string name="multiface_crop_help">Tap a face to begin.</string>
+
+
+    <!-- //by csh-->
+    <string name="review_rank_hint">평점을 남겨 주세요.</string>
+    <string name="review_rank_0.5">0.5</string>
+    <string name="review_rank_1">1</string>
+    <string name="review_rank_1.5">1.5</string>
+    <string name="review_rank_2">2</string>
+    <string name="review_rank_2.5">2.5</string>
+    <string name="review_rank_3">3</string>
+    <string name="review_rank_3.5">3.5</string>
+    <string name="review_rank_4">4</string>
+    <string name="review_rank_4.5">4.5</string>
+    <string name="review_rank_5">5</string>
+    <string name="review_rank_text">평점</string>
+    <string name="review_title">리뷰</string>
+    <string name="review_hint">선생님께 수업 받은 후기를 별점과 함께 남겨주세요. 허위사실 및 타인을 비방하는 글은 삼가주시길 바랍니다.</string>
+    <string name="review_rank_validate">평점을 선택해 주세요.</string>
+    <string name="review_review_validate">리뷰를 적어주세요.</string>
+    <string name="review_review_average">평균 별점</string>
+    <string name="review_review_count">총 0개 리뷰</string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/item_intro_email_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="@string/sign_up_email_hint"/>
+
+    <EditText
+        android:id="@+id/item_intro_password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/sign_up_password_hint"/>
+
+    <TextView
+        android:id="@+id/item_intro_sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/intro_sign_in"/>
+
+    <TextView
+        android:id="@+id/item_intro_sign_up_teacher_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/intro_sign_up_teacher"/>
+
+    <TextView
+        android:id="@+id/item_intro_sign_up_student_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/intro_sign_up_student"/>
+
+</LinearLayout>

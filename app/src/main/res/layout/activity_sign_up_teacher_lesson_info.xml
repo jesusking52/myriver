@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- lesson info  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <!-- 과외 경력 -->
+            <TextView
+                style="@style/SignUpLabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="@string/common_career"/>
+            <Spinner
+                style="@style/Widget.ActionBar.Spinner"
+                android:id="@+id/sign_up_career_spinner"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"/>
+
+            <!-- 과외 희망 과목 -->
+            <TextView
+                style="@style/SignUpLabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up_lesson_info_preferred_subjects_label"/>
+            <com.riverauction.riverauction.feature.common.widget.SelectedSubjectsView
+                android:id="@+id/sign_up_available_subjects_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"/>
+
+            <!-- 과외 조건 -->
+            <TextView
+                style="@style/SignUpLabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up_lesson_info_condition_label"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+                <!-- 수업 가능 횟수 -->
+                <Spinner
+                    style="@style/Widget.ActionBar.Spinner"
+                    android:id="@+id/sign_up_class_available_count_spinner"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"/>
+                <!-- 희망 요일 -->
+                <RelativeLayout
+                    android:id="@+id/sign_up_available_days_of_week_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:background="@drawable/shape_color_white_border_white_five">
+                    <TextView
+                        android:id="@+id/sign_up_available_days_of_week_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:singleLine="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="15sp"
+                        android:textColor="@color/river_auction_greyish"
+                        android:text="@string/common_available_days_of_week_choose"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="7dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_arrow_right"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:orientation="horizontal">
+                <!-- 수업 시간 -->
+                <Spinner
+                    style="@style/Widget.ActionBar.Spinner"
+                    android:id="@+id/sign_up_class_time_spinner"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"/>
+                <!-- 성별 무관 -->
+                <Spinner
+                    style="@style/Widget.ActionBar.Spinner"
+                    android:id="@+id/sign_up_preferred_gender_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- 희망 금액 -->
+            <TextView
+                style="@style/SignUpLabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up_lesson_info_preferred_price_label"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="7dp">
+
+                <EditText
+                    android:id="@+id/sign_up_preferred_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:hint="@string/sign_up_phone_preferred_price_hint"
+                    android:textSize="15sp"
+                    style="@style/EditTextStyle"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/river_auction_warm_grey"
+                    android:text="@string/select_price_unit"/>
+            </FrameLayout>
+
+            <!-- 경력/수업 방식 소개 -->
+            <TextView
+                style="@style/SignUpLabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up_lesson_info_description_label"/>
+            <EditText
+                style="@style/EditTextStyle"
+                android:id="@+id/sign_up_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:singleLine="false"
+                android:hint="@string/sign_up_teacher_description_hint" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        style="@style/LeafyGreenButton"
+        android:id="@+id/sign_up_next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/common_button_sign_up"/>
+</LinearLayout>

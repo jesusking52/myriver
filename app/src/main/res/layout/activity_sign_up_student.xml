@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- basic -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <!-- 학생 정보 -->
+            <TextView
+                style="@style/SignUpLabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="@string/sign_up_student_info_label"/>
+            <!-- 이름 -->
+            <EditText
+                style="@style/EditTextStyle"
+                android:id="@+id/sign_up_name"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:singleLine="true"
+                android:hint="@string/sign_up_name_hint"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="7dp">
+                <!-- 나이 -->
+                <Spinner
+                    style="@style/Widget.ActionBar.Spinner"
+                    android:id="@+id/sign_up_age_spinner"
+                    android:layout_width="116dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"/>
+
+                <!-- 성별 -->
+                <Spinner
+                    style="@style/Widget.ActionBar.Spinner"
+                    android:id="@+id/sign_up_gender_spinner"
+                    android:layout_width="116dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- 아이디/비밀번호 -->
+            <TextView
+                style="@style/SignUpLabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up_teacher_email_password_label"/>
+            <!-- 이메일 -->
+            <EditText
+                style="@style/EditTextStyle"
+                android:id="@+id/sign_up_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:singleLine="true"
+                android:hint="@string/sign_up_email_hint"
+                android:inputType="textEmailAddress" />
+            <!-- 비밀번호 -->
+            <EditText
+                style="@style/EditTextStyle"
+                android:id="@+id/sign_up_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:singleLine="true"
+                android:hint="@string/sign_up_password_hint"
+                android:inputType="textPassword" />
+            <!-- 비밀번호 재입력 -->
+            <EditText
+                style="@style/EditTextStyle"
+                android:id="@+id/sign_up_password_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:singleLine="true"
+                android:hint="@string/sign_up_password_check_hint"
+                android:inputType="textPassword" />
+
+            <!-- 학년계열 -->
+            <TextView
+                style="@style/SignUpLabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up_student_status_label"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:orientation="horizontal">
+                <!-- 초중고 -->
+                <Spinner
+                    style="@style/Widget.ActionBar.Spinner"
+                    android:id="@+id/sign_up_student_status_spinner"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"/>
+                <!-- 학년 -->
+                <Spinner
+                    style="@style/Widget.ActionBar.Spinner"
+                    android:id="@+id/sign_up_grade_spinner"
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"/>
+                <!-- 계열 -->
+                <Spinner
+                    style="@style/Widget.ActionBar.Spinner"
+                    android:id="@+id/sign_up_department_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- 주소 -->
+            <TextView
+                style="@style/SignUpLabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up_teacher_location_label"/>
+            <RelativeLayout
+                android:id="@+id/sign_up_address_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/shape_color_white_border_white_five">
+
+                <TextView
+                    android:id="@+id/sign_up_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:singleLine="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="15sp"
+                    android:textColor="@color/river_auction_greyish"
+                    android:text="@string/sign_up_phone_address_hint"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="7dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/button_search"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        style="@style/LeafyGreenButton"
+        android:id="@+id/sign_up_next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/common_button_next"/>
+</LinearLayout>

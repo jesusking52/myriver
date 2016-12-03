@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/selected_subject_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/shape_color_white_border_white_five">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="15dp"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:textColor="@color/river_auction_greyish"
+            android:text="@string/sign_up_available_subjects_hint"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:src="@drawable/icon_arrow_right"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/selected_subject_result_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"/>
+</merge>

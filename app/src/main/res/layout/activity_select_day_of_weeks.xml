@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textColor="@color/river_auction_greyish"
+        android:text="@string/select_day_of_weeks_description"/>
+
+    <com.riverauction.riverauction.feature.common.dayofweek.SelectDayOfWeeksView
+        android:id="@+id/select_day_of_week_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

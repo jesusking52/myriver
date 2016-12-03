@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tutorial_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:id="@+id/tutorial_skip_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:textColor="@color/river_auction_greyish_two"
+            android:text="@string/tutorial_skip_button"/>
+
+        <com.jhcompany.android.libs.widget.viewpager.ViewPagerIndicator
+            android:id="@+id/tutorial_view_pager_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/tutorial_start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:textColor="@color/river_auction_dodger_blue"
+            android:text="@string/tutorial_next_button"/>
+    </RelativeLayout>
+</FrameLayout>

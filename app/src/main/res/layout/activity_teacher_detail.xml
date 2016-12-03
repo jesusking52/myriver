@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- 희망 금액 or 입찰 금액-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:orientation="horizontal"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:id="@+id/price_title_view"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/river_auction_greyish_brown"
+                    android:text="@string/teacher_item_preferred_price"/>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/river_auction_white"/>
+
+                <TextView
+                    android:id="@+id/price_view"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="34sp"
+                    android:textColor="@color/river_auction_dodger_blue"/>
+            </LinearLayout>
+            <include layout="@layout/divider_dark"/>
+            <!-- 기본 정보 -->
+            <com.riverauction.riverauction.feature.common.BasicInfoView
+                android:id="@+id/basic_info_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <include layout="@layout/divider_dark"/>
+
+            <!-- 과외 정보 -->
+            <com.riverauction.riverauction.feature.common.LessonInfoView
+                android:id="@+id/lesson_info_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <include layout="@layout/divider_dark"/>
+
+            <!-- 경력 소개 / 수업 방식-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:background="@color/river_auction_pale_grey"
+                    android:paddingLeft="18dp"
+                    android:textSize="11sp"
+                    android:textColor="@color/river_auction_warm_grey"
+                    android:text="@string/description_info_label"/>
+
+                <TextView
+                    android:id="@+id/description_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="18dp"
+                    android:paddingTop="18dp"
+                    android:paddingRight="18dp"
+                    android:paddingBottom="24dp"/>
+            </LinearLayout>
+
+            <include layout="@layout/divider_dark"/>
+
+            <!-- 선생님 리뷰-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@android:color/white">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:background="@color/river_auction_pale_grey"
+                    android:paddingLeft="18dp"
+                    android:textSize="11sp"
+                    android:textColor="@color/river_auction_warm_grey"
+                    android:text="@string/description_review_label"/>
+                <!--리뷰 없을 시-->
+                <TextView
+                    android:id="@+id/review_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:layout_marginTop="22dp"
+                    android:paddingTop="18dp"
+                    android:text="@string/teacher_item_review_empty"
+                    />
+                <TextView
+                    android:id="@+id/review_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:text="@string/teacher_item_review_empty2"
+                    android:paddingBottom="18dp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:layout_marginBottom="22dp"
+                    />
+                <TextView
+                    android:id="@+id/riview_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:text="@string/teacher_item_review_button"
+                   />
+                <!--리뷰 있을 시-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="15sp"
+                    android:textColor="@color/river_auction_brownish_grey"
+                    android:text="@string/review_review_average"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="15sp"
+                    android:textColor="@color/river_auction_brownish_grey"
+                    android:text="@string/review_review_count"/>
+                <ImageView
+                    android:id="@+id/review_list"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/icon_arrow_right"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <!-- dummy -->
+            <View
+                android:id="@+id/phone_number_dummy_view"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/phone_number_button"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:text="@string/menu_show_phone_number"
+        android:background="@color/river_auction_dodger_blue"
+        android:visibility="gone"/>
+</FrameLayout>

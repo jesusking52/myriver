@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/favorite_text_view"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:gravity="center"
+    android:drawableLeft="@drawable/icon_like"
+    android:textColor="?attr/actionMenuTextColor"
+    android:text="@string/menu_favorite"/>

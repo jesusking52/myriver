@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 입찰취소(선생님만가능) or 경매취소(학생가능) -->
+    <item
+        android:id="@+id/menu_my_lesson_cancel_button"
+        android:title="@string/menu_bidding_cancel"
+        app:showAsAction="always"/>
+</menu>
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RiverAuction Admin</title>
+    <link rel="stylesheet" href="/static/components/bootstrap/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="/static/components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/static/components/angular/angular.min.js"></script>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body ng-app="RiverAuctionApp">
+    <div ng-controller="RiverAuctionAuthCtrl">
+        <div id="logo-container" class="container row col-md-12" style="height: 200px;">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
+        <div id="auth-container" class="container row col-md-12">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4 form-group">
+                <input id="sign-in-id" type="text" class="form-control" placeholder="ID" ng-model="account.email">
+                <input id="sign-in-password" type="password" class="form-control" placeholder="PASSWORD" ng-model="account.password">
+                <button id="sign-in" class="btn btn-primary col-md-12" ng-click="signIn()">SIGN IN</button>
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        angular.module('RiverAuctionApp', []).controller('RiverAuctionAuthCtrl', function ($scope, $http) {
+            $scope.account = {};
+            $scope.signIn = function () {
+                $http.post('/admin/auth/sign_in', {
+                    email: $scope.account.email,
+                    password: $scope.account.password
+                }).success(function (response) {
+                    location.href = '';
+                }).error(function (response) {
+                    console.log(response);
+                    alert('로그인에 실패하였습니다.');
+                });
+            };
+        });
+    </script>
+</body>
+</html>

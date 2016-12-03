@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:background="@color/river_auction_pale_grey"
+        android:paddingLeft="18dp"
+        android:textSize="11sp"
+        android:textColor="@color/river_auction_warm_grey"
+        android:text="@string/lesson_info_label"/>
+
+    <!-- 학업 수준 -->
+    <FrameLayout
+        android:id="@+id/lesson_info_level_container"
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="15sp"
+            android:textColor="@color/river_auction_greyish_brown"
+            android:text="@string/sign_up_student_level_label"/>
+
+        <TextView
+            android:id="@+id/lesson_info_level_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="15sp"
+            android:textColor="@color/river_auction_warm_grey"/>
+    </FrameLayout>
+
+    <!-- 과외 경력 -->
+    <FrameLayout
+        android:id="@+id/lesson_info_career_container"
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="15sp"
+            android:textColor="@color/river_auction_greyish_brown"
+            android:text="@string/common_career"/>
+
+        <TextView
+            android:id="@+id/lesson_info_career_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="15sp"
+            android:textColor="@color/river_auction_warm_grey"/>
+    </FrameLayout>
+
+    <include layout="@layout/divider"/>
+
+    <!-- 수업 가능 요일 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="15sp"
+            android:textColor="@color/river_auction_greyish_brown"
+            android:text="@string/common_available_days_of_week"/>
+
+        <TextView
+            android:id="@+id/lesson_info_available_days_of_week_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="200dp"
+            android:textSize="15sp"
+            android:textColor="@color/river_auction_warm_grey"/>
+    </FrameLayout>
+
+    <include layout="@layout/divider"/>
+
+    <!-- 수업 가능 횟수 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="15sp"
+            android:textColor="@color/river_auction_greyish_brown"
+            android:text="@string/common_class_available_count"/>
+
+        <TextView
+            android:id="@+id/lesson_info_class_available_count_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="15sp"
+            android:textColor="@color/river_auction_warm_grey"/>
+    </FrameLayout>
+
+    <include layout="@layout/divider"/>
+
+    <!-- 희망 수업 시간 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="15sp"
+            android:textColor="@color/river_auction_greyish_brown"
+            android:text="@string/common_class_time"/>
+
+        <TextView
+            android:id="@+id/lesson_info_class_time_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="15sp"
+            android:textColor="@color/river_auction_warm_grey"/>
+    </FrameLayout>
+
+    <include layout="@layout/divider"/>
+</LinearLayout>

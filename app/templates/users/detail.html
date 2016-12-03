@@ -1,0 +1,36 @@
+<div ng-init="init()">
+    <div class="thumbnail">
+         <img ng-src="{{ user.profile_photos[0].source }}" style="width: 200px;">
+    </div>
+    <div>
+        <label>EMAIL</label>
+        <p>{{ user.email }}</p>
+        <label>NAME</label>
+        <p>{{ user.name }}</p>
+        <label>TYPE</label>
+        <p>{{ user.type }}</p>
+        <label>GENDER</label>
+        <p>{{ user.gender }}</p>
+        <label>BIRTH YEAR</label>
+        <p>{{ user.birth_year }}</p>
+        <label>COINS</label>
+        <p>{{ user.coins }}</p>
+    </div>
+    <div class="row">
+        <div class="col-lg-8">
+            <input type="number" class="form-control" ng-model="chargingCoins">
+        </div>
+        <div class="col-lg-4">
+            <button class="btn btn-default" ng-click="charge()">CHARGE</button>
+        </div>
+    </div>
+    <div class="list-group">
+        <div class="list-group-item" ng-repeat="t in transactions">
+            <p>{{ t.transaction_type }}</p>
+            <p>{{ t.value }}</p>
+        </div>
+    </div>
+    <div>
+        <button class="btn btn-block btn-default" ng-click="loadMore()">더 불러오기</button>
+    </div>
+</div>

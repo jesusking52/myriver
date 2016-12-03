@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <FrameLayout
+        android:layout_width="211dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_gravity="center"
+            android:tint="@color/river_auction_pale_grey"
+            android:src="@drawable/big_icon_money_updated"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="21sp"
+            android:textColor="@color/river_auction_dodger_blue"
+            android:text="@string/post_bidding_hint"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:textColor="@color/river_auction_pinkish_grey"
+            android:textSize="13sp"
+            android:text="@string/post_bidding_preferred_price"/>
+
+        <TextView
+            android:id="@+id/lesson_preferred_price_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/river_auction_dodger_blue"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/shape_color_pale_gray_border_white_five">
+
+        <EditText
+            android:id="@+id/bidding_price_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:textColor="@color/river_auction_greyish_brown"
+            android:textColorHint="@color/river_auction_pinkish_grey"
+            android:hint="@string/post_bidding_hint"
+            android:background="@color/river_auction_pale_grey"
+            android:gravity="center"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="13sp"
+            android:textColor="@color/river_auction_warm_grey"
+            android:text="@string/select_price_unit"/>
+    </FrameLayout>
+
+</LinearLayout>

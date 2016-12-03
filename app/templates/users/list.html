@@ -1,0 +1,20 @@
+<div ng-init="init()">
+    <div class="row">
+        <div class="col-lg-8">
+            <input type="text" class="form-control" ng-model="keyword">
+        </div>
+        <div class="col-lg-4">
+            <button class="btn btn-default" ng-click="search()">SEARCH</button>
+        </div>
+    </div>
+    <div class="list-group">
+        <a href="#users/{{ u.id }}" class="list-group-item" ng-repeat="u in users">
+            <p>{{ u.email }}</p>
+            <p>{{ u.name }}</p>
+            <p>{{ u.gender }}</p>
+        </a>
+    </div>
+    <div>
+        <button class="btn btn-block btn-default" ng-click="loadMore()">더 불러오기</button>
+    </div>
+</div>
